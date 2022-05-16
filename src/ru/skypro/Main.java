@@ -1,6 +1,8 @@
 package ru.skypro;
 
 
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -10,16 +12,15 @@ public class Main {
         String fullName = "Ivanov Ivan Ivanovich";
         System.out.println("Ф.И.О сотрудника — " + (lastName + firstName + middleName));
 
-        fullName = fullName.toUpperCase();
-        System.out.println("Данные Ф.И.О сотрудника для заполнения отчета — " + fullName);
+        System.out.println("Данные Ф.И.О сотрудника для заполнения отчета — " + fullName.toUpperCase());
 
-        fullName = fullName.toLowerCase();
         String s1 = fullName.replace(" ", "; ");
-        String s2 = s1.replace("i", "I");
-        System.out.println(s2);
+        System.out.println("Данные ФИО сотрудника для административного отдела — " + s1);
 
         String fullName1 = "Иванов Семён Семёнович";
+
         String s3 = fullName1.replace("ё", "е");
-        System.out.println(s3);
+        System.out.println("Данные ФИО сотрудника — " + s3);
+
     }
 }
