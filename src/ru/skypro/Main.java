@@ -18,9 +18,6 @@ public class Main {
         System.out.println("Данные ФИО сотрудника для административного отдела — " + s1);
 
         String fullName1 = "Иванов Семён Семёнович";
-
-        String s3 = fullName1.replace("ё", "е");
-        System.out.println("Данные ФИО сотрудника — " + s3);
-
+        System.out.println("Данные ФИО сотрудника — " + fullName1.replace("ё", "е"));
     }
 }
